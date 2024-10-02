@@ -1,10 +1,7 @@
 import React, { useState } from 'react'
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import { CiEdit } from "react-icons/ci";
-import { dataType } from '../../dummtData/dummtData';
 import { useDispatch } from "react-redux";
 import { handleChnageCategory } from '../../redux/authSlice';
 

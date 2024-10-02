@@ -1,7 +1,5 @@
 import { Container } from '@mui/material'
-import React, { useState } from 'react'
-import { dataType, DummtData } from '../../dummtData/dummtData'
-import { CiEdit } from "react-icons/ci";
+import { dataType, } from '../../dummtData/dummtData'
 import { IoClose } from "react-icons/io5";
 import Modals from './modal';
 import { useSelector } from 'react-redux';
@@ -9,17 +7,6 @@ import { User } from '../../dummyBase/dummyBase';
 import { useDispatch } from "react-redux";
 import { handleRemove } from '../../redux/authSlice';
 
-const style = {
-    position: 'absolute' as 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: 400,
-    bgcolor: 'background.paper',
-    border: '2px solid #000',
-    boxShadow: 24,
-    p: 4,
-  };
   
   interface stateType {
    

@@ -87,7 +87,9 @@ const Login = () => {
             >
               Sign in
             </button>
+            
           </div>
+          {error ? <div className='text-red-500 mt-5 text-[14px]'>{error}</div> : null}
         </section>
       </div>
     </div>

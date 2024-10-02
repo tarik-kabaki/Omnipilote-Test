@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react'
 import { useState } from 'react';
-import { DummyBase, User } from '../../dummyBase/dummyBase';
+import {  User } from '../../dummyBase/dummyBase';
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { registerAnewUser } from '../../redux/authSlice';
@@ -86,7 +85,9 @@ const Register = () => {
           Register
         </button>
       </div>
+      {error ? <div className='text-red-500 mt-5 text-[14px]'>{error}</div> : null}
     </section>
+    
   </div>
 </div>
 </div>
